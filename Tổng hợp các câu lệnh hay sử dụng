@@ -1,0 +1,6 @@
+1. Login postgresql
+psql -h <host> -U <username> -d <database_name>
+2. Kiểm tra trạng thái replication trên master node
+SELECT * FROM pg_stat_replication;
+3. Kiểm tra trạng thái recevied trên slave node
+SELECT * FROM pg_stat_wal_receiver;
